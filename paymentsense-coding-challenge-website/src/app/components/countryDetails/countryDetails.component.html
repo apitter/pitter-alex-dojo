@@ -1,0 +1,17 @@
+<div class="country-details-container">
+    <div><h2>{{country.name}}</h2></div>
+    
+
+    <div class="half-page">
+        <div><b>Population: </b> <span>{{country.population}}</span> </div>
+        <div><b>Alpha 3 Code: </b> <span>{{country.alpha3Code}}</span> </div>
+        <div><b>Region: </b> <span>{{country.region}}</span> </div>
+        <div><b>Sub Region: </b> <span>{{country.subregion}}</span> </div>
+        <div><b>Languages: </b> 
+            <span *ngFor="let language of country.languages">{{language.name}} <br/></span>
+        </div>
+    </div>
+    <div class="half-page">
+        <img [src]="country.flag" class="country-flag"/>
+    </div>
+</div>

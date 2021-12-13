@@ -1,0 +1,16 @@
+
+button.selected{
+    background-color: orangered;
+}
+
+div.countries-list-wrapper {
+    text-align: center;
+
+    div.country-button-wrapper{
+        width: 100%;
+        
+        button {
+            width: 80%;
+        }
+    }
+}

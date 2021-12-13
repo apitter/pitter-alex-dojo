@@ -1,0 +1,16 @@
+<div class="countries-list-wrapper">
+    <div><h1>Countries</h1></div>
+
+    <div *ngIf="selectedCountry">
+        <app-country-details [country]='selectedCountry'></app-country-details>
+    </div>
+
+    <div class="country-button-wrapper">
+        <button 
+            *ngFor="let country of countries" 
+            [class.selected]="country === selectedCountry" 
+            (click)="selectCountry(country)">
+            <span>{{country.name}}</span>
+        </button>        
+    </div>
+</div>
